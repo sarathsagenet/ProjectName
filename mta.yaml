@@ -1,0 +1,20 @@
+ID: ProjectName_Test
+_schema-version: '2.1'
+description: ProjectName_Test_Description
+version: 0.0.1
+
+modules:
+ - name: db
+   type: hdb
+   path: db
+   requires:
+    - name: hdi_db
+
+resources:
+ - name: hdi_db
+   parameters:
+      config:
+         schema: ProjectName_Test_SchemaName
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
