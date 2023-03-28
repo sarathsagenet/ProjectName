@@ -1,3 +1,5 @@
 sdfsdfs
 
-master - change1
+delete <master - change1>
+
+remote - change 1 
